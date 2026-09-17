@@ -2,17 +2,17 @@
 ## Project 1: COPA
 ### Project Origin
 - The project started from a simple frustration: why does a relatively rule-based engineering selection and quotation process still require extensive manual work in calculation, searching, copying, formatting, and verification?
-- I had previously built an Excel-based workbook to automate part of the solution and quotation process. However, it was difficult to maintain, covered only one brand, while our actual business required support for 2–3 brands.
+- I had previously built an Excel-based workbook to automate part of the solution and quotation process. However, it was difficult to maintain, supported only one brand, while our actual business required support for 2–3 brands.
 - I decided to go one step further: learn Python from scratch and build a more powerful lightweight automation tool for myself and my colleagues.
 
 ### Detailed Action
-- I started with a rule-based selection engine, which was completed within a month with AI-assisted review. However, I was not satisfied with the CLI-based input and output, so I decided to build an orchestrator layer to manage the engine's inputs and outputs.
+- I started with a rule-based selection engine, which I completed within a month with AI-assisted development and review. However, I was not satisfied with the CLI-based input and output, so I decided to build an orchestrator layer to manage the engine's inputs and outputs.
 - The project was temporarily suspended due to a change in my personal plans and was relaunched in August 2026.
-- With the assistance of coding agents, I learned and built the orchestrator — which I named the Commander — together with the supporting modules required to handle the complete workflow.
+- With the assistance of coding agents, I learned and built the orchestrator — which I called the Commander — together with the supporting modules required to handle the complete workflow.
 - COPA can now accept professional inquiries through an input box, parse the requirements, generate a suitable selection of weighing equipment for human confirmation, and produce a standardized quotation sheet upon confirmation.
 
 ### Key Insight
-- **The software should not make unreasonable guesses.** Therefore, I deliberately introduced zero AI into the core selection process.
+- **The software should not make unreasonable guesses.** Therefore, I deliberately introduced zero AI in the core selection process.
 - **Human-in-the-loop.** COPA only provides recommendations based on explicit business rules. The final decision remains with the user.
 - **Human-readable and editable output.** All outputs remain accessible to users rather than being locked inside the software.
 - **Exception cases remain human responsibilities.** COPA is designed to cover common and structured scenarios rather than attempting to replace human judgment in extreme cases.
@@ -21,14 +21,14 @@
 - **The real value lies in reusable structured data rather than faster quotation.** By preserving project information as a structured snapshot, COPA turns a one-time quotation into a reusable project asset that can support downstream workflows.
 
 ### Results
-- The first production-ready version of COPA was handed over to me as the primary user on September 1, 2026, and subsequently released to colleagues for commissioning.
+- The first production-ready version of COPA was completed on September 1, 2026, and subsequently released to colleagues for commissioning.
 - I later upgraded COPA to support a newly launched product series and added English-language output.
-- Initial user feedback was positive, followed by a more valuable finding: some colleagues had difficulty using the natural-language input box because their actual working vocabulary may differed from the language patterns covered by my parser.
+- Initial user feedback was positive, followed by a more valuable finding: some colleagues had difficulty using the natural-language input box because their actual working vocabulary may differ from the language patterns covered by my parser.
 - In response, I introduced a **dual-input mode**, allowing users to enter requirements either through the natural-language input box or through structured dropdown selections. The two modes are synchronized, allowing users to gradually learn the natural-language input format through the structured interface.
 - In COPA v1.3, I further integrated **technical-document generation**, extending the workflow from **inquiry → selection → quotation** to **inquiry → selection → quotation → technical documentation**.
 
 ### Future Direction
-- **From structured project data to interactive presentation.** COPA's project snapshot could serve as the foundation for automatically generating customer-facing interactive HTML presentations, combining product data, 3D assets, and LLM-assisted web generation.
+- **From structured project data to interactive presentation.** COPA's project snapshots could provide the foundation for automatically generating customer-facing interactive presentations, combining product data, 3D assets, and AI-assisted web generation.
 
 ## Project 2: Reconstructing Business Logic Behind a Legacy Workflow
 ### Project Origin
